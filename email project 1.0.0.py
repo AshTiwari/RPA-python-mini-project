@@ -4,11 +4,17 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from openpyxl import load_workbook
 
+'''
+Requirements:
+1. Open cmd and type: pip install openpyxl
+2. Open google account of sender and allow unknown software to use gmail.
+'''
+
 gmail_user = "## senders email address ##"
 gmail_pword = "## sender's password ##"
 
 msg = MIMEMultipart('alternative')
-sent_from = ['next13579.24680@gmail.com']
+sent_from = ['## senders email address ##']
 msg['Subject'] = 'Attendance Status'
     
 #excel-file=data
